@@ -23,4 +23,5 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
 
     Route::apiResource('/pets', \App\Http\Controllers\Api\PetController::class);
     Route::apiResource('pets.health-records', \App\Http\Controllers\Api\HealthRecordController::class)->shallow();
+    Route::apiResource('pets.reminders', \App\Http\Controllers\Api\ReminderController::class)->shallow();
 });

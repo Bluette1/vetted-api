@@ -42,4 +42,9 @@ class Pet extends Model
     {
         return $this->hasMany(HealthRecord::class);
     }
+
+    public function reminders(): HasMany
+    {
+        return $this->hasMany(Reminder::class);
+    }
 }
