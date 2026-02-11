@@ -47,4 +47,9 @@ class Pet extends Model
     {
         return $this->hasMany(Reminder::class);
     }
+
+    public function wellnessEntries(): HasMany
+    {
+        return $this->hasMany(WellnessEntry::class);
+    }
 }
