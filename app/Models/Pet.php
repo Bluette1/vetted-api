@@ -37,4 +37,9 @@ class Pet extends Model
     {
         return $this->hasMany(WeightHistory::class);
     }
+
+    public function healthRecords(): HasMany
+    {
+        return $this->hasMany(HealthRecord::class);
+    }
 }
