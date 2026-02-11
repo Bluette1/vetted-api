@@ -1,211 +1,66 @@
-# 🐾 Vetted
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-> Calm insights. Thoughtful care.
-> A modern pet wellness and health tracking app for proactive pet owners.
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
----
+## About Laravel
 
-## 📖 Overview
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-**Vetted** is a mobile-first pet wellness application designed to help pet owners track health records, monitor behavioural patterns, and receive supportive, non-alarming insights about their pets.
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Unlike traditional pet record apps that focus only on storing medical events, Vetted emphasizes:
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-* 📊 Pattern recognition over isolated events
-* 🧠 Proactive wellness tracking
-* 🩺 Easy vet-ready summaries
-* 💛 Calm, humane user experience
+## Learning Laravel
 
-The goal is simple: help pet owners make better care decisions with clarity and confidence.
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
----
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-## 🎯 Problem
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-Most pet health apps:
+## Laravel Sponsors
 
-* Act as passive record storage
-* Are opened only during vet visits
-* Provide reminders but no meaningful insights
-* Feel clinical or transactional
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-Pet owners often miss subtle early signals in behaviour or appetite because trends are hard to track manually.
+### Premium Partners
 
----
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[WebReinvent](https://webreinvent.com/)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Jump24](https://jump24.co.uk)**
+- **[Redberry](https://redberry.international/laravel/)**
+- **[Active Logic](https://activelogic.com)**
+- **[byte5](https://byte5.de)**
+- **[OP.GG](https://op.gg)**
 
-## 💡 Solution
+## Contributing
 
-Vetted combines:
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-* Structured health records
-* Daily wellness tracking
-* Rule-based early signal detection
-* Smart reminders
-* Vet-ready summaries
+## Code of Conduct
 
-All presented in a supportive, non-diagnostic tone.
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
----
+## Security Vulnerabilities
 
-## 🚀 MVP Features
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-### 👤 User Accounts
+## License
 
-* Email/password authentication
-* Multiple pets per user
-* Profile management
-
-### 🐕 Pet Profiles
-
-* Species (cat/dog)
-* Breed
-* Age or DOB
-* Weight tracking
-* Medical notes
-
-### 🩺 Health Records
-
-* Vaccinations
-* Medications
-* Vet visits
-* Document uploads
-* Chronological timeline view
-
-### 🔔 Smart Reminders
-
-* Vaccination reminders
-* Medication schedules
-* Custom reminders
-* Push notifications + email fallback
-
-### 📊 Wellness & Behaviour Tracking
-
-Optional daily check-ins:
-
-* Appetite
-* Energy level
-* Mood
-* Bathroom habits
-* Activity
-
-Includes:
-
-* Trend visualizations
-* Weekly summaries
-
-### 🧠 Pattern-Based Insights
-
-Rule-based alerts such as:
-
-* Repeated low appetite
-* Missed medication
-* Sudden weight shifts
-* Reduced activity trends
-
-All insights are non-diagnostic and include appropriate disclaimers.
-
-### 🧑‍⚕️ Vet Sharing
-
-* Secure read-only summary links
-* QR code sharing
-* Includes records + wellness trends
-* No vet account required
-
----
-
-## 🛠 Tech Stack (Planned)
-
-### Backend
-
-* Laravel (API-only)
-* PostgreSQL / MySQL
-* Laravel Sanctum (auth)
-* Queues for reminders
-* Cloud object storage for uploads
-
-### Frontend
-
-* React Native (planned)
-  *(or alternative cross-platform solution)*
-
-### Notifications
-
-* Push notifications
-* Email fallback
-
----
-
-## 🧱 Architecture (High-Level)
-
-```
-Mobile App
-    ↓
-Laravel API
-    ├── Authentication
-    ├── Pet & Health Records
-    ├── Wellness Tracking
-    ├── Reminder Scheduler
-    ├── Insight Engine (rule-based)
-    └── Secure Sharing
-```
-
----
-
-## 🔒 Design Principles
-
-* Calm, humane language
-* No fear-based alerts
-* No guilt-driven UX
-* No medical diagnosis
-* Privacy-first data handling
-
----
-
-## 📈 Success Metrics (MVP)
-
-* Users log in 3+ times per week
-* 50%+ enable reminders
-* Regular wellness data entry
-* Vet summaries used in real appointments
-
----
-
-## 🚧 Out of Scope (MVP)
-
-* Telehealth video
-* Payments/subscriptions
-* Marketplace features
-* Wearable integrations
-* AI diagnosis
-* Social/community feeds
-
----
-
-## 🔮 Future Roadmap
-
-* Vet dashboards
-* Subscription tiers
-* AI-assisted pattern analysis
-* Telehealth integrations
-* Breed-specific wellness guidance
-* Wearable sync
-
----
-
-## 🧠 Why This Project?
-
-Vetted explores how thoughtful UX and structured data can help pet owners make better care decisions — without overwhelming them.
-
-This project combines:
-
-* Preventive health thinking
-* Calm product design
-* API-first architecture
-* Scalable backend planning
-
----
-
-## 📜 License
-
-TBD
-
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
