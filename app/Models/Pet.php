@@ -57,4 +57,9 @@ class Pet extends Model
     {
         return $this->hasMany(Insight::class);
     }
+
+    public function shares(): HasMany
+    {
+        return $this->hasMany(PetShare::class);
+    }
 }

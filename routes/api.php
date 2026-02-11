@@ -27,4 +27,8 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::get('pets/{pet}/trends', [\App\Http\Controllers\Api\WellnessController::class, 'trends']);
     Route::apiResource('pets.wellness', \App\Http\Controllers\Api\WellnessController::class)->only(['index', 'store']);
     Route::get('pets/{pet}/insights', [\App\Http\Controllers\Api\InsightController::class, 'index']);
+    Route::post('pets/{pet}/share', [\App\Http\Controllers\Api\PetShareController::class, 'create']);
 });
+
+// Public Share Link
+Route::get('/share/{token}', [\App\Http\Controllers\Api\PetShareController::class, 'show']);
