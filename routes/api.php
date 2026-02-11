@@ -20,4 +20,6 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::get('/user', function (Request $request) {
         return $request->user();
     });
+
+    Route::apiResource('/pets', \App\Http\Controllers\Api\PetController::class);
 });
