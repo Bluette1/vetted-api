@@ -26,7 +26,7 @@ class WellnessController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreWellnessEntryRequest $request, Pet $pet)
+    public function store(StoreWellnessEntryRequest $request, Pet $pet, \App\Services\InsightService $insightService)
     {
         // Authorization handled in request class
 
@@ -40,10 +40,12 @@ class WellnessController extends Controller
 
         if ($existing) {
             $existing->update($validated);
+            $insightService->generateForPet($pet);
             return $this->success($existing, 'Wellness entry updated for this date', 200);
         }
 
         $entry = WellnessEntry::create($validated);
+        $insightService->generateForPet($pet);
 
         return $this->success($entry, 'Wellness entry created successfully', 201);
     }

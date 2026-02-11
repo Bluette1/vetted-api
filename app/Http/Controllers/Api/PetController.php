@@ -56,7 +56,7 @@ class PetController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdatePetRequest $request, Pet $pet)
+    public function update(UpdatePetRequest $request, Pet $pet, \App\Services\InsightService $insightService)
     {
         if (Auth::id() !== $pet->user_id) {
             return $this->error('', 'You are not authorized to update this pet', 403);
@@ -71,6 +71,8 @@ class PetController extends Controller
                  'weight' => $request->weight,
                  'date' => now(),
              ]);
+
+             $insightService->generateForPet($pet);
         }
 
         return $this->success($pet);
