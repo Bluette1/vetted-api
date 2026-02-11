@@ -62,4 +62,9 @@ class Pet extends Model
     {
         return $this->hasMany(PetShare::class);
     }
+
+    public function trainingGoals(): HasMany
+    {
+        return $this->hasMany(TrainingGoal::class);
+    }
 }
